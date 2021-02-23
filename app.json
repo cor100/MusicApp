@@ -1,0 +1,12 @@
+{
+  "name": "MusicAppOne",
+  "displayName": "MusicAppOne",
+  "expo": {
+    "name": "MusicAppOne",
+    "slug": "MusicAppOne",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
