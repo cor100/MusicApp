@@ -1,4 +1,4 @@
-* {
+*  {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -133,9 +133,4 @@ body {
 	font-size: 1.1em;
 	font-weight: 700;
 	padding: 10px;
-}
-
-.button {
-  font-color: #ffffff;
-  font-size: 2em;
 }

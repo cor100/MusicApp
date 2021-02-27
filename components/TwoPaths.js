@@ -10,15 +10,17 @@ import "./TwoPaths.css"
 
 export default class TwoPaths extends Component{
   render(){
+    const styles = {color: "white"}
   return(
     <div className="container">
-	    <div className="box">
+	   <div className="box">
       <span></span>
+
 		    <div className="content">
         <h2>Culture</h2>
+
         <Button title="Read More"
         color="transparent"
-        outline=""
         onPress={() => this.props.navigation.navigate("Cultures")}/>
 
 		    </div>
@@ -27,19 +29,18 @@ export default class TwoPaths extends Component{
 
 
 	  <div className="box">
-		<span></span>
+  		<span></span>
+  		<div className="content">
 
-		<div className="content">
-			<h2>
-				Composers
-			</h2>
-      <Button title="Read More"
-      color="transparent"
-      onPress={() => this.props.navigation.navigate("Cultures")}>
-      </Button>
-		</div>
-	</div>
-</div>
+  			<h2 style={styles}>
+  				Composers
+  			</h2>
+        <Button title="Read More"
+        color="transparent"
+        onPress={() => this.props.navigation.navigate("Cultures")}/>
+  		</div>
+  	</div>
+  </div>
   )
-}
+  }
 }
