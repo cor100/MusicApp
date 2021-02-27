@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	align-items: center;
+	/*align-items: center;*/
 	background-color: #111111;
 	display: flex;
 	font-family: consolas;

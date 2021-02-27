@@ -7,6 +7,7 @@ export default class CultureList extends Component{
   render(){
     return(
       <div>
+      <Button title = "Home" onPress={() => this.props.navigation.goBack()}/>
         <ListItem />
         <ListItem />
         <ListItem />

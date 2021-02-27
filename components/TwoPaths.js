@@ -10,13 +10,13 @@ import "./TwoPaths.css"
 
 export default class TwoPaths extends Component{
   render(){
-    const styles = {color: "white"}
   return(
     <div className="container">
 	   <div className="box">
       <span></span>
 
 		    <div className="content">
+
         <h2>Culture</h2>
 
         <Button title="Read More"
@@ -32,7 +32,7 @@ export default class TwoPaths extends Component{
   		<span></span>
   		<div className="content">
 
-  			<h2 style={styles}>
+  			<h2>
   				Composers
   			</h2>
         <Button title="Read More"
