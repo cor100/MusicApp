@@ -111,9 +111,13 @@ body {
 	padding: 20px 40px;
 	position: relative;
 	z-index: 2;
+	height: 320px;
+	justify-content: center;
+	overflow: auto;
 }
 
 .container .box .content h2 {
+	justify-content: center;
 	color: #ffffff;
 	font-size: 2em;
 	margin-bottom: 10px;
