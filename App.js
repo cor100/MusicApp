@@ -7,6 +7,7 @@ import { createStackNavigator} from '@react-navigation/stack';
 
 
 import CultureList from "./components/CultureList"
+import ComposerList from "./components/ComposerList"
 import TwoPaths from "./components/TwoPaths.js"
 
 const Stack = createStackNavigator();
@@ -25,6 +26,7 @@ export default class App extends Component{
             headerStyle: {backgroundColor: "white", borderBottomWidth: 0}
           }}/>
           <Stack.Screen name="Cultures" component={CultureList}/>
+          <Stack.Screen name="Composers" component={ComposerList}/>
 
         </Stack.Navigator>
       </NavigationContainer>

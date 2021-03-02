@@ -6,6 +6,7 @@ import { createStackNavigator, createAppContainer } from '@react-navigation/stac
 
 
 import CultureList from "./CultureList"
+import ComposerList from "./ComposerList"
 import "./TwoPaths.css"
 
 export default class TwoPaths extends Component{
@@ -17,7 +18,7 @@ export default class TwoPaths extends Component{
 
 		    <div className="content">
 
-        <h2>Culture</h2>
+        <h2>Cultures</h2>
 
         <Button title="Read More"
         color="transparent"
@@ -32,12 +33,10 @@ export default class TwoPaths extends Component{
   		<span></span>
   		<div className="content">
 
-  			<h2>
-  				Composers
-  			</h2>
+  			<h2>Composers</h2>
         <Button title="Read More"
         color="transparent"
-        onPress={() => this.props.navigation.navigate("Cultures")}/>
+        onPress={() => this.props.navigation.navigate("Composers")}/>
   		</div>
   	</div>
   </div>

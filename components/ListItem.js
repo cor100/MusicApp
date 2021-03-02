@@ -1,10 +1,10 @@
 import React from 'react'
 
-function ListItem(){
+function ListItem(props) {
   return(
     <div>
-    <input type="checkbox"/>
-      <p>Placeholder</p>
+      <h2>{props.title}</h2>
+      <p>{props.description}</p>
     </div>
   )
 }
