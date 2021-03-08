@@ -4,42 +4,34 @@ import { Button, Text, View } from 'react-native';
 import { NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
 
-
+import { styles } from "./Styles"
 import CultureList from "./CultureList"
 import ComposerList from "./ComposerList"
-import "./TwoPaths.css"
+import "./TwoPaths"
 
 export default class TwoPaths extends Component{
   render(){
   return(
-    <div className="container">
-	   <div className="box">
-      <span></span>
-
-		    <div className="content">
-
-        <h2>Cultures</h2>
-
+    <View style={styles.Container}>
+	    <View style={styles.Box}>
+      <Text style={styles.Content}>
+        <Text style={styles.Heading2}>Cultures</Text>
         <Button title="Read More"
         color="transparent"
         onPress={() => this.props.navigation.navigate("Cultures")}/>
-
-		    </div>
-
-	    </div>
+		    </Text>
+	    </View>
 
 
-	  <div className="box">
-  		<span></span>
-  		<div className="content">
-
-  			<h2>Composers</h2>
+	  <View style={styles.Box}>
+      <Text style={styles.Content}>
+        <Text style={styles.Heading2}>Composers</Text>
         <Button title="Read More"
         color="transparent"
         onPress={() => this.props.navigation.navigate("Composers")}/>
-  		</div>
-  	</div>
-  </div>
+  		</Text>
+  	</View>
+  </View>
   )
   }
 }

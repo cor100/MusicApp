@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
 import { Button, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import "./Composers.css"
+import "../TwoPaths"
 import ListItem from "../ListItem"
 export default class Composer4 extends Component{
   render(){
     return(
-      <div className="container">
-        <div className="box">
-          <span></span>
+      <View className="container">
+        <View className="box">
 
-          <div className="content">
+          <View className="content">
 
           <Button title = "Back" 
           color="transparent"
@@ -20,10 +19,10 @@ export default class Composer4 extends Component{
               description="Edward Kennedy 'Duke' Ellington was an African American composer who lived from 1899 to 1974. He was awarded a posthumous Pulitzer Prize Special Award for music in 1999. On May 24, 1974, Ellington died from complications from lung cancer and pneumonia. His son Mercer took over leadership of the orchestra, After Duke died, and continued until his own death in 1996. He had a mastery melody, rhythms, sonic textures, and compositional forms."
             />
 
-          </div>
+          </View>
 
-        </div> 
-      </div>
+        </View> 
+      </View>
     )
   }
 }

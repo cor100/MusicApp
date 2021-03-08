@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import { Button, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import "./TwoPaths.css"
+import "./TwoPaths"
+import { styles } from "./Styles"
 import ListItem from "./ListItem"
 export default class ComposerList extends Component{
   render(){
     return(
-      <div className="container">
-        <div className="box">
-          <span></span>
+      <View style={styles.Container}>
+        <View style={styles.Box}>
+          <Text style={styles.Content}>
 
-          <div className="content">
-
-          <h2>Composers</h2>
+          <Text style={styles.Heading2}>Composers</Text>
 
           <Button title = "Mozart" 
           color="transparent"
@@ -42,15 +41,14 @@ export default class ComposerList extends Component{
           color="transparent"
           onPress={() => this.props.navigation.navigate("Composer7")}/>
 
-          <p> </p>
+          <Text> </Text>
 
           <Button title = "Home" 
           onPress={() => this.props.navigation.goBack()}/>
 
-          </div>
-
-        </div> 
-      </div>
+          </Text>
+        </View> 
+      </View>
     )
   }
 }

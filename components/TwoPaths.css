@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -66,13 +65,11 @@ body {
 }
 
 .container .box {
-	align-items: center;
 	vertical-align: center;
 	background-color: #111111;
 	color: #ffffff;
 	display: flex;
 	height: 400px;
-	justify-content: center;
 	margin: 20px 30px;
 	position: relative;
 	transition: transform 0.5s ease;
@@ -102,6 +99,7 @@ body {
 
 .container .box span {
 	background-color: rgba(0, 0, 0, 0.6);
+	float: center;
 	bottom: 6px;
 	left: 6px;
 	position: absolute;
@@ -113,52 +111,49 @@ body {
 .container .box .content {
 	padding: 20px 40px;
 	position: relative;
+	float: center;
 	z-index: 2;
 	height: 320px;
 	vertical-align: center;
-	justify-content: center;
 }
 
-.container .box .content h2 {
-	justify-content: center;
+.container .box .content .Heading2 {
 	display: flex;
-	align-items: center;
 	text-align: center;
 	vertical-align: center;
+	float: center;
 	color: #ffffff;
 	font-size: 2em;
 	margin-bottom: 10px;
 }
 
-.container .box .content h1 {
+.container .box .content .Heading1 {
 	padding-top: 90px;
-	justify-content: center;
 	display: flex;
-	align-items: center;
 	text-align: center;
 	vertical-align: center;
+	float: center;
 	color: #ffffff;
 	font-size: 2em;
 	margin-bottom: 10px;
 }
 
-.container .box .content h4 {
-	justify-content: center;
-	align-items: center;
+.container .box .content .Heading4 {
 	text-align: center;
+	float: center;
 	color: #ffffff;
 	font-size: 1.7em;
 	margin-bottom: 10px;
 }
 
-.container .box .content p {
+.container .box .content .Paragraph {
 	color: #ffffff;
 	font-size: 1.1em;
 	line-height: 1.4em;
 	margin-bottom: 10px;
 }
 
-.container .box .content a {
+.container .box .content .Hyperlink {
 	background-color: #ffffff;
 	color: #111111;
 	display: inline-block;

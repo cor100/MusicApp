@@ -1,11 +1,14 @@
 import React from 'react'
+import { StyleSheet, Button, Text, View } from 'react-native';
+import { styles } from "./Styles"
 
 function ListItem(props) {
   return(
-    <div>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-    </div>
+    <Text>
+      <Text style={styles.Paragraph}>
+        <Text style={styles.Heading2}>{props.title}</Text>{props.description}
+      </Text>
+    </Text>
   )
 }
 export default ListItem

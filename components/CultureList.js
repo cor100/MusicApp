@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import { Button, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import "./TwoPaths.css"
+import "./TwoPaths"
 import ListItem from "./ListItem"
+import { styles } from "./Styles"
 export default class CultureList extends Component{
   render(){
     return(
-      <div className="container">
-        <div className="box">
-          <span></span>
+      <View style={styles.Container}>
+        <View style={styles.Box}>
+          <Text style={styles.Content}>
 
-          <div className="content">
-
-          <h2>Cultures</h2>
+          <Text style={styles.Heading2}>Cultures</Text>
 
           <Button title = "Germany" 
           color="transparent"
@@ -46,15 +45,15 @@ export default class CultureList extends Component{
           color="transparent"
           onPress={() => this.props.navigation.navigate("Culture8")}/>
 
-          <p> </p>
+          <Text> </Text>
           
           <Button title = "Home" 
           onPress={() => this.props.navigation.goBack()}/>
 
-          </div>
+          </Text>
 
-        </div> 
-      </div>
+        </View> 
+      </View>
     )
   }
 }
